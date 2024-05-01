@@ -1,0 +1,22 @@
+
+<div class="container mt-3">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Sigla</th>
+                <th>Nome</th>
+            </tr>
+        </thead>
+        <tbody class="table-group">
+            @for (item of estados; track $index)
+            {
+            <tr>
+                <td style="font-size: larger; font-weight: bold;">{{item.id}}</td>
+                <td>{{item.sigla}}</td>
+                <td>{{item.nome}}</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
